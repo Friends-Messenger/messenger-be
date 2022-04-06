@@ -5,8 +5,8 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const config = new DocumentBuilder()
-    .setTitle('Cats example')
-    .setDescription('The cats API description')
+    .setTitle('Messenger API')
+    .setDescription('We are the best!')
     .setVersion('1.0')
     .addTag('cats')
     .build();
