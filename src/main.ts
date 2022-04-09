@@ -9,7 +9,6 @@ async function bootstrap() {
     .setTitle('Messenger API')
     .setDescription('We are the best!')
     .setVersion('1.0')
-    .addTag('cats')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('swagger', app, document);
