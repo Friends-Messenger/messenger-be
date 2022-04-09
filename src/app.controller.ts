@@ -25,7 +25,4 @@ export class AppController {
     return req.user;
   }
 }
-function ApiExplorerSettings() {
-  throw new Error('Function not implemented.');
-}
 
