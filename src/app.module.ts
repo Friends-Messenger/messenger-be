@@ -7,6 +7,9 @@ import { TestController } from './controllers/test.controller';
 import { User } from './models/user.model';
 import { UsersModule } from './users/users.module';
 
+const dbEntities = [
+  User,
+]
 @Module({
   imports: [
     AuthModule, 
@@ -18,16 +21,10 @@ import { UsersModule } from './users/users.module';
       username: 'lwnzsnomlhxquk',
       password: '136a09b6d51778adffbafb374e825aa5492a5d4e88a85af94c0acb0ce247f5a6',
       database: 'datirgc973hmgr',
-      // extra: {
-        // rejectUnauthorized: false, 
-        // ssl: true,
-      // },
       ssl: {
-        rejectUnauthorized: false // <<<<<<< YOU NEED THIS
-        },
-      entities: [
-        User
-      ],
+        rejectUnauthorized: false 
+      },
+      entities: dbEntities,
       synchronize: true,
     }),
   ],
